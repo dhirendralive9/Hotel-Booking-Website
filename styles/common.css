@@ -2,25 +2,30 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
 .wrapper {
     height: 100%;
     width: 100%;
 }
 
 
- img{
+img{
     width: 200px;
     height: 200px;
 }
 
 #logo {
-    width: 200px;
-    height: 200px;
+    width: 60px;
+    height: 60px;
 }
 
 #img_index {
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
     margin-right: 4px;
     
 }
@@ -31,7 +36,7 @@
 
 
 .socialMedia_links img{
-   width: 20px;
-   height: 22px;
+   width: 22px;
+   height: 20px;
 }
 
