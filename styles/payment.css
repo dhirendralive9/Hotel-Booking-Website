@@ -6,3 +6,25 @@
 p span {
    font-weight: bold;
 }
+
+.content {
+
+}
+
+.hotel_container{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    margin:2% auto ;
+}
+
+.billing{
+    margin: 2% 2%;
+}
+
+.invoice {
+    margin: 2% 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
+}

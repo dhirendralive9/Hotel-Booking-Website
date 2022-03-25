@@ -7,3 +7,9 @@
     width: 800px;
     height: 500px;
 }
+
+#hotel_container {
+    margin: 2%;
+    background-color: rgb(132,136,139);
+    width: 40%;
+}

@@ -22,64 +22,68 @@
         
         </header>
           <div class="content">
-            <div class="hotel_container">
+            <div id="hotel_container">
               <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="" class="hotel_details_img">
-              <form action="/payment.html" method="get">
-                <div class="formcontrol">
-                  <label for="adults">Adults: </label>
-                  <input type="number" id="adults" min="1" required>
-                </div>
-                <div class="formcontrol">
-                   <label for="name">Name: </label>
-                   <input type="text" id="name" required>
-                </div>
-                <div class="formcontrol">
-                  <label for="from_date">From Date: </label>
-                  <input type="date" id="from_date" required>
-                </div>
-                <div class="formcontrol">
-                  <label for="to_date">To Date: </label>
-                  <input type="date" id="to_date" required>
-                </div>
-                <div class="formcontrol">
-                  <label for="total">Total: </label>
-                  <input type="number" id="total" disabled>
-                </div>
-                 <div class="formcontrol">
-
-
-                  <button type="submit">Book Now</button>
-                 </div>
-              </form>
+              <div class="form-container">
+                <form action="/payment.html" method="get">
+                  <div class="formcontrol">
+                    <label for="adults">Adults: </label>
+                    <input type="number" id="adults" min="1" required>
+                  </div>
+                  <div class="formcontrol">
+                     <label for="name">Name: </label>
+                     <input type="text" id="name" required>
+                  </div>
+                  <div class="formcontrol">
+                    <label for="from_date">From Date: </label>
+                    <input type="date" id="from_date" required>
+                  </div>
+                  <div class="formcontrol">
+                    <label for="to_date">To Date: </label>
+                    <input type="date" id="to_date" required>
+                  </div>
+                  <div class="formcontrol">
+                    <label for="total">Total: </label>
+                    <input type="number" id="total" disabled>
+                  </div>
+                   <div class="formcontrol">
+  
+  
+                    <button type="submit">Book Now</button>
+                   </div>
+                </form>
+              </div>
              
-              <h2 class="details_hotel_name">
-                Radisson Blu Hotel
-              </h2>
-              <p>RATING</p>
-
-              <p>5 Stars</p>
-
-              <p>AMENTIES</p>
-
-              <div class="hotel_features_list">
-                <ul>
-                  <li>Room Service</li>
-                  <li>Restaurant</li>
-                  <li>Business Center</li>
-                  <li>Fitness Center</li>
-                  <li>Pool</li>
-                </ul>
-              </div>
-              <div class="hotel-description">
-                <h4>DESCRIPTIONS</h4>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officia ratione, delectus id quidem eaque non modi illo autem dolores cum quam adipisci, deleniti vitae nobis voluptatem eligendi vero doloribus!</p>
-              </div>
+               <div class="hotel-info">
+                <h2 class="details_hotel_name">
+                  Radisson Blu Hotel
+                </h2>
+                <p>RATING</p>
+  
+                <p>5 Stars</p>
+  
+                <p>AMENTIES</p>
+  
+                <div class="hotel_features_list">
+                  <ul>
+                    <li>Room Service</li>
+                    <li>Restaurant</li>
+                    <li>Business Center</li>
+                    <li>Fitness Center</li>
+                    <li>Pool</li>
+                  </ul>
+                </div>
+                <div class="hotel-description">
+                  <h4>DESCRIPTIONS</h4>
+  
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officia ratione, delectus id quidem eaque non modi illo autem dolores cum quam adipisci, deleniti vitae nobis voluptatem eligendi vero doloribus!</p>
+                </div>
+               </div>
 
             </div>
           </div>
 
-          <div class="footer">
+          <footer class="footer">
             <div> <a href="contact.html" target="_blank">Contact Us</a></div>
             <div class="socialMedia_links">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
@@ -95,7 +99,7 @@
             <div>
               <p id="copyright">&copy;2020 ROOM SEARCH PVT LTD</p>
             </div>
-          </div>
+          </footer>
           </div>
 
        </div>
