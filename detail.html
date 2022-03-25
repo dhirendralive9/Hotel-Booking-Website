@@ -17,14 +17,41 @@
     <body>
        <div class="wrapper">
         <div class="header">
-        <img src="/assests/images/logo.png" id="logo" alt="logo">
-        <a href="login.html" target="_blank" rel="noopener noreferrer">Login</a>
+          <a href="/index.html"> <img src="/assests/images/logo.png" id="logo" alt="logo"></a>
+         <a href="login.html" target="_blank" rel="noopener noreferrer">Login</a>
         
         </div>
           <div class="content">
             <div class="hotel_container">
               <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="" class="hotel_details_img">
-              <a href="http://" target="_blank" rel="noopener noreferrer" class="booking_link">Book Now</a>
+              <form action="/payment.html" method="get">
+                <div class="formcontrol">
+                  <label for="adults">Adults: </label>
+                  <input type="number" id="adults" min="1" required>
+                </div>
+                <div class="formcontrol">
+                   <label for="name">Name: </label>
+                   <input type="text" id="name" required>
+                </div>
+                <div class="formcontrol">
+                  <label for="from_date">From Date: </label>
+                  <input type="date" id="from_date" required>
+                </div>
+                <div class="formcontrol">
+                  <label for="to_date">To Date: </label>
+                  <input type="date" id="to_date" required>
+                </div>
+                <div class="formcontrol">
+                  <label for="total">Total: </label>
+                  <input type="number" id="total" disabled>
+                </div>
+                 <div class="formcontrol">
+
+
+                  <button type="submit">Book Now</button>
+                 </div>
+              </form>
+             
               <h2 class="details_hotel_name">
                 Radisson Blu Hotel
               </h2>

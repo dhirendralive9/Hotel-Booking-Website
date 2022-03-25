@@ -7,13 +7,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>login</title>
+        <title>Login</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles/common.css">
     </head>
     <body>
-       <p>LOGIN</p>
+       <form id="login_form" action="/index.html" method="get">
+           <div class="form-control"> <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="username" required></div>
+           <div class="form-control">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="password" required>
+           </div>
+          <button type="submit">Login</button>
+       </form>
         
         <script src="" async defer></script>
     </body>
