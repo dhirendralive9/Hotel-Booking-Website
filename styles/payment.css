@@ -1,3 +1,10 @@
+body::before {
+    content: ' ';
+    display: block;
+    height: 1.9em;
+}
+
+
 .hotel_img{
     width: 500px;
     height: 500px;
@@ -27,4 +34,10 @@ p span {
     border: 1px solid black;
     border-radius: 5px;
     padding: 1% 2%;
+}
+
+body::after {
+    content: ' ';
+    display: block;
+    height: 2.5em;
 }
