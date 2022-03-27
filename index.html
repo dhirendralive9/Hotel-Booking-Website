@@ -10,6 +10,7 @@
         <title>Index</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="/styles/common.css">
         <link rel="stylesheet" href="/styles/index.css">
     </head>
@@ -19,7 +20,8 @@
        
         <header class="header">
           <div class="header-element"> <img src="/assests/images/logo.png" id="logo" alt="logo"></div>
-          <div class="header-element"> <a href="login.html" target="_blank" rel="noopener noreferrer">Login</a></div>
+          <div class="header-element"> <button type="button" class="btn btn-light" data-toggle="modal" data-target="#loginModal" >LOGIN</button>
+          </div>
         </header>
           <div class="content">
             <div class="search_bar"> 
@@ -47,7 +49,7 @@
       
               </div >
             <div class="view_more">
-              <a href="index.html">View more>></a>
+              <a class="btn btn-secondary" href="index.html">View more>></a>
             </div>
           </div>
 
@@ -58,7 +60,7 @@
           <footer class="footer">
           
               <ul class="footer_nav">
-                <li class="footer_nav_item"><a href="contact.html">Contact Us</a></li>
+                <li class="footer_nav_item"><button class="btn btn-info" data-toggle="modal" data-target="#contactUsModal">Contact Us</button></li>
                 <li class="footer_nav_item">   <p id="copyright">&copy;2020 ROOM SEARCH PVT LTD</p></li>
                 <li class="footer_nav_item socialMedia_links"> <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                   <img src="assests/images/facebook.png" alt="">
@@ -76,9 +78,68 @@
 
 
           </footer>
+          <!-- Login Modal -->
+          <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <form class="login_form" action="/index.html" method="get">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+               
+                <div class="modal-body">
+                  <div class="login-control"> <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="username" required></div>
+                   <div class="login-control">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="password" required>
+                   </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="login-btn btn btn-primary">Login</button>
+               
+                </div>
+              </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact us modal -->
+          <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <form action="/index.html" method="get">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"> Contact Us</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Thank You for reaching out !!!</p>
+                  <p>Please enter your email and we will get back to you.</p>
+                  <div id="form-control">
+                    <label for="emailid">Email:</label>
+                    <input type="email" placeholder="Enter your email" id="emailid" required>
+                   
+                </div>
+           
+                </div>
+                <div class="modal-footer">
+                 
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </form>
+            </div>
+          </div>
 
        </div>
         
-        <script src="" async defer></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </body>
 </html>

@@ -14,7 +14,7 @@
 }
 
 .list-content-menu-item {
-    margin: 0 1rem;
+    margin: 0 0;
 
 }
 
@@ -22,11 +22,12 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
-    padding: 0.2rem 0;
+    padding: 0.2rem 1rem;
 }
 
 
 .map_img{
+    padding-top: 20px;
     width: 800px;
     height: 500px;
 }
@@ -39,6 +40,12 @@
     height: 210px; 
 } 
 
+#hotel_container:hover{
+    
+    background-color: rosybrown;
+
+}
+
 
 .hotel_img{
     width: 250px;
@@ -48,6 +55,10 @@
 .hotel_card_details{
     padding-left: 1rem;
 }
+
+/* .hotel_card_details:hover {
+    background-color: rosybrown;
+} */
 
 .hotel_lists {
     display: flex;

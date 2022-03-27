@@ -40,13 +40,13 @@ header {
 
 
 
-.header-element a {
+.header-element button {
     color: black;
     text-decoration: none;
     font-weight: bold;
     float: right;
     padding: 0.5rem;
-    
+    margin-right: 10px;
 }
 
 
@@ -113,21 +113,36 @@ footer {
     
 }
 
-.footer_nav_item:nth-of-type(1) a{
+.footer_nav_item button{
     text-decoration: none;
-    color: #000000;
+    color: #fff;
 }
 
 .footer_nav_item #copyright {
     font-size: 15px;
     font-weight: bold;
     margin: auto;
-  width: 100%;
+    width: 100%;
   /* border: 3px solid green; */
-  padding-bottom: 12px;
+  /* padding-bottom: 10px; */
 }
 
  .socialMedia_links {
     margin: auto 2rem;
     padding-bottom: 12px;
+}
+
+.login-control{
+    width: 100%;
+    margin-right: 2em;
+    margin-left: 2em;
+
+}
+
+.login-control label{
+    width: 40%;
+}
+
+.login-btn {
+    margin: auto;
 }

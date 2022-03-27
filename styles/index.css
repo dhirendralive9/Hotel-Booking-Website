@@ -27,12 +27,7 @@ header {
     height: 450px;
 }
 
-.search_bar form {
-    /* margin: auto;
-    display: inline; */
-    
-    
-}
+
 
 #searchboxtext {
    margin-top: 25vh;
@@ -82,7 +77,7 @@ header {
 
 .view_more a {
     text-decoration: none;
-    color: black;
+    color: #fff;
    
     margin-left: 45%;
     margin-bottom: 1%;
@@ -123,7 +118,6 @@ header {
    
     color: white;
     font-size: 16px;
-   
- 
-    
   }
+
+  

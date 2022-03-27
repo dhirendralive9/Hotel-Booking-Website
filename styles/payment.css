@@ -61,22 +61,13 @@ p span {
 
 .pay_now {
     margin: auto;
-    width: 50%;
    
-    padding: 10px;
-    margin-left: 10px; 
-}
-.pay_link {
-    margin: auto;
-  width: 50%;
- 
-  padding: 10px;
+    /* width: 50%; */
+   
+    /* padding: 10px; */
+    /* margin-left: 10px;  */
 }
 
-.pay_link a {
-    color: #000000;
-    text-decoration: none;
-}
 
 
 body::after {
