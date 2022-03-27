@@ -47,9 +47,10 @@ header {
 
 
 .city_img {
-    margin: 0 15%;
+    margin: 0 0;
     display: flex;
-    justify-content: center;
+     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     align-content: space-between;
 }
@@ -60,11 +61,22 @@ header {
     
 }
 
+.img_container {
+    position: relative;
+    
+}
+
+
 .img_container img{
     border-radius: 15px;
+    box-shadow: 10px 10px 10px grey;
+    
 }
 .view_more {
-    padding-bottom: 1rem;
+    margin: auto;
+    width: 50%;
+    
+    padding: 10px;
     
 }
 
@@ -75,3 +87,43 @@ header {
     margin-left: 45%;
     margin-bottom: 1%;
 }
+
+
+.img_index {
+    opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.layover {
+    transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  }
+
+  .img_container:hover #img_index {
+    opacity: 0.5;
+    
+  }
+
+  .img_container:hover .layover {
+    opacity: 1;
+   
+  }
+
+  .text {
+   
+    color: white;
+    font-size: 16px;
+   
+ 
+    
+  }

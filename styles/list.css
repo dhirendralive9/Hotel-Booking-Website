@@ -25,10 +25,6 @@
     padding: 0.2rem 0;
 }
 
-.hotel_img{
-    width: 200px;
-    height: 200px;
-}
 
 .map_img{
     width: 800px;
@@ -37,10 +33,20 @@
 
 #hotel_container {
     margin: 2%;
-    background-color: rgb(132,136,139);
-    width: 35%;
-    height: 35%;
-    
+    background-color: lightgrey;
+    width: 40%;
+    /* height: 35%; */
+    height: 210px; 
+} 
+
+
+.hotel_img{
+    width: 250px;
+    height: 210px; 
+} 
+
+.hotel_card_details{
+    padding-left: 1rem;
 }
 
 .hotel_lists {
@@ -49,14 +55,7 @@
     flex-wrap: wrap;
 }
 
-#hotel_container {
-   
-    background-color: rgb(132,136,139);
-    width: 40%;
-    height: 40%; 
-    margin-left: 2.5em;
-    margin-right: 3.5em;
-}
+
 
 #hotel_container a {
     text-decoration: none;
@@ -65,4 +64,8 @@
 
 .map-view {
     display: none;
+}
+
+.hotel_card{
+    display: flex;
 }

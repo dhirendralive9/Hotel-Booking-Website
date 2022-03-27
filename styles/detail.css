@@ -4,27 +4,88 @@ body::before {
     height: 1em;
 }
 
-.hotel_details_img{
-    width: 500px;
-    height: 500px;
-}
+
+
 
 .booking_link{
     display: block;
 }
 
-#hotel_container {
-  margin-top: 2%;
-  margin-left: 4%;
-  margin-right: 4%;
+.hotel_container {
+    display: flex;
+    margin-top: 2%;
+     margin-left: 2%;
+     margin-right: 4%;
+     border: 1px solid black;
+}
+
+
+
+.hotel_img {
+    margin-left: 100px;
+   
+    width: 60%;
+    
+    
+    border-right: 1px solid black;
+}
+
+.hotel_details_img{
+    width: 500px;
+    height: 500px;
+    margin-left: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+
 }
 
 .form-container{
+    width: 40%;
     margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
 }
+
+.formcontrol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-left: 10px; */
+    width: 90%;
+    
+    /* border: 3px solid green; */
+    padding: 30px;
+    
+}
+
+.formcontrol label {
+   width: 50%;
+}
+
+.formcontrol input {
+    width: 50%;
+ }
+
+
+ .form_button button{
+   
+  width: 30%;
+  padding: 10px;
+  margin: auto;
+  margin-left: 50%
+  /* font-size: 1rem;
+  margin-left: 50%;
+  margin-top: 1em; */
+  
+ }
 
 body::after {
     content: ' ';
     display: block;
     height: 1em;
+}
+
+.hotel-info{
+    margin-left: 2%;
 }
