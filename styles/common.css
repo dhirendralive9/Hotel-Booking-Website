@@ -73,7 +73,9 @@ img{
     margin-bottom: 5rem;
 }
 
-
+.gold-star {
+    color: #daa520;
+}
 
 .socialMedia_links img{
    width: 22px;
@@ -145,4 +147,21 @@ footer {
 
 .login-btn {
     margin: auto;
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    footer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px){
+    footer {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .footer_nav_item #copyright {
+        font-size: 10px;
+    }
 }

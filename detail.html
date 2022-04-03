@@ -11,7 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
         <link rel="stylesheet" href="/styles/common.css">
         <link rel="stylesheet" href="/styles/detail.css">
 
@@ -26,7 +26,20 @@
           <div class="content">
             <div class="hotel_container">
               <div class="hotel_img">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="" class="hotel_details_img">
+                 <div id="prev" class="controls"> <a href="#" onclick=""><i class="fa-solid fa-angle-left fa-4x"></i></a>
+                   </div>
+                   <div class="sliderMode fade">
+                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg
+                     " alt="" srcset="">
+                   </div>
+                   <div class="sliderMode displayNone fade">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" alt="" srcset="">
+                  </div>
+                  <div class="sliderMode displayNone fade">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" alt="" srcset="">
+                  </div>
+                   
+                  <div id="next" class="controls"><a href="#" onclick=""><i class="fa-solid fa-angle-right fa-4x"></i></a></div>
               </div>
              
               <div class="form-container">
@@ -54,7 +67,7 @@
                    <div class="formcontrol form_button">
   
                     
-                    <button class="btn btn-outline-success" type="submit" >Book Now</button>
+                    <button class="btn btn-outline-success btn-submit-success" type="submit" >Book Now</button>
                    </div>
                 </form>
               </div>
@@ -65,7 +78,7 @@
                 </h2>
                 <p>RATING</p>
   
-                <p>5 Stars</p>
+                <p><i class="gold-star fa-solid fa-star"></i><i class="gold-star fa-solid fa-star"></i><i class="gold-star fa-solid fa-star"></i><i class="gold-star fa-solid fa-star"></i><i class="gold-star fa-solid fa-star"></i></p>
   
                 <p>AMENTIES</p>
   
@@ -170,5 +183,6 @@
 
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="/scripts/detail.js"></script>
     </body>
 </html>
