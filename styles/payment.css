@@ -15,7 +15,7 @@ p span {
 .hotel_container{
     display: flex;
     background-color: rgb(132,136,139);
-    width: 45%;
+    width: 70%;
     height: 20%;
     margin:2% auto ;
     height: 200px;
@@ -77,10 +77,122 @@ body::after {
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-      
+    .hotel_container {
+        width: 70%;
+        margin-left: 10%;
+        height: 10%;
+    }
+
+    .hotel_img_wrapper{
+        width: 40%;
+    }
+
+    .hotel_img {
+        width: 100%;
+    }
+
+    .hotel_details{
+        font-size: 0.8em;
+    }
+
+    .hotel_details h2{
+       font-size: 1.5rem;
+    }
+
+    .confirmation {
+        width: 90%;
+        margin-left: 10px;
+    }
+    
+    .billing {
+        width: 25%;
+    }
+    .invoice {
+        width: 50%;
+    }
+
+    .pay_now {
+        width: 15%;
+    }
+
+    .pay_now button{
+        margin-right: 0;
+    }
 }
 
 
-@media (max-width: 575px){
+@media (max-width: 576px){
+    .hotel_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    } 
 
+    .hotel_img_wrapper {
+        width: 100%;
+        margin: auto;
+    }
+
+    .hotel_img_wrapper img{
+        width: 70%;
+        margin-left: 12%;
+        margin-top: 10px;
+        
+    }
+
+    .hotel_details{
+        width: 70%;
+        margin-left: 12%;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    .hotel_details h2 {
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
+    .confirmation {
+       flex-direction: column;
+       height: 70%;
+       margin-left: 13px;
+    }
+    
+    .confirmation div {
+        width: 100%;
+    }
+
+    .billing {
+       margin-bottom: 0;
+       width: 100%;
+    }
+
+    
+
+    .invoice {
+        width: 100%;
+        padding-top: 0;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .pay_now {
+        height: 20%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+    }
+    
+    .pay_now button {
+       padding: 5px 12px 5px 12px;
+       font-size: 20px;
+       margin-left: 40%;
+    }
+    
+
+
+  
 }
